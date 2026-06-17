@@ -1,0 +1,14 @@
+# KDE temporary and configuration files
+.directory
+*~
+*.kate-swp
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Local state files
+/tmp/sysmonitor_state.json
+
+# Built packages
+*.plasmoid
