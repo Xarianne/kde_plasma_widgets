@@ -3,7 +3,7 @@
         "Id": "org.kde.plasma.sysmonitor.modern",
         "Name": "Modern SysMonitor",
         "Description": "Modern, transparent system monitor (CPU, GPU, RAM, Network)",
-        "Icon": "utilities-system-monitor",
+        "Icon": "speedometer-symbolic",
         "Version": "1.1",
         "Authors": [
             {

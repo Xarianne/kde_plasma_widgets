@@ -17,6 +17,20 @@ PlasmoidItem {
     // Set background hints to configurable (allows custom transparency/blur container support)
     Plasmoid.backgroundHints: PlasmaCore.Types.ConfigurableBackground
 
+    // Symbolic icon for the panel so it follows the theme's monochrome style
+    compactRepresentation: Kirigami.Icon {
+        source: "speedometer-symbolic"
+        isMask: true
+        color: Kirigami.Theme.textColor
+        active: compactMouse.containsMouse
+        MouseArea {
+            id: compactMouse
+            anchors.fill: parent
+            hoverEnabled: true
+            onClicked: root.expanded = !root.expanded
+        }
+    }
+
     // Data properties
     property real cpuUsage: 0.0
     property real cpuTemp: 0.0
